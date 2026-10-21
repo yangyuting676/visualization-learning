@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="可视化导论学习空间：五章完整课程、交互实验、学习笔记与章节自测。">
+  <title>可视化导论 · 学习空间</title>
+  <link rel="icon" href="assets/course-logo-mark.svg?v=25" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/app.css">
+  <link rel="stylesheet" href="assets/beginner.css">
+<link rel="stylesheet" href="assets/design-studio.css"><link rel="stylesheet" href="assets/design-evidence.css?v=54"><link rel="stylesheet" href="assets/course-design-tasks.css?v=56">
+<link rel="stylesheet" href="assets/revision.css">
+<link rel="stylesheet" href="assets/practice-workbench.css">
+<link rel="stylesheet" href="assets/visual-theme.css">
+<link rel="stylesheet" href="assets/overview.css">
+<link rel="stylesheet" href="assets/explanation.css">
+<link rel="stylesheet" href="assets/guided-learning.css">
+  <script defer src="assets/course-data.js?v=37"></script><script defer src="assets/store.js?v=56"></script><script defer src="vendor/d3.min.js"></script><script defer src="assets/beginner-data.js?v=26"></script><script defer src="assets/study-data.js?v=26"></script><script defer src="assets/study-flow.js?v=56"></script><script defer src="assets/beginner.js?v=44"></script><script defer src="assets/design-studio.js?v=56"></script><script defer src="assets/revision.js?v=32"></script><script defer src="assets/practice-workbench.js"></script><script defer src="assets/explanation.js?v=56"></script><script defer src="assets/search.js?v=56"></script><script defer src="assets/chart-fixer.js?v=56"></script><script defer src="assets/course-lab-data.js?v=48"></script><script defer src="assets/design-evidence.js?v=54"></script><script defer src="assets/course-tasks-data.js?v=55"></script><script defer src="assets/missing-impact.js?v=56"></script><script defer src="assets/real-design-diagnosis.js?v=56"></script><script defer src="assets/real-design-practice.js?v=56"></script><script defer src="assets/course-design-tasks.js?v=56"></script><script defer src="assets/course-color.js?v=51"></script><script defer src="assets/course-color-analysis.js?v=51"></script><script defer src="assets/course-pipeline.js?v=52"></script><script defer src="assets/course-aggregation.js?v=53"></script><script defer src="assets/course-lab.js?v=53"></script><script defer src="assets/app.js?v=56"></script>
+<link rel="stylesheet" href="assets/local-access.css">
+<script defer src="assets/local-access.js?v=34"></script>
+<link rel="stylesheet" href="assets/four-color-theme.css?v=19">
+<link rel="stylesheet" href="assets/reading-layout.css?v=20">
+<script defer src="assets/reading-layout.js?v=31"></script>
+<link rel="stylesheet" href="assets/art-direction.css?v=21">
+<script defer src="assets/art-direction.js?v=47"></script>
+<link rel="stylesheet" href="assets/chart-fixer.css?v=24">
+<link rel="stylesheet" href="assets/study-flow.css?v=22">
+<script defer src="assets/study-ui.js?v=40"></script>
+<link rel="stylesheet" href="assets/course-brand.css?v=33">
+<script defer src="assets/course-brand.js?v=49"></script>
+<link rel="stylesheet" href="assets/learning-path.css?v=40">
+<script defer src="assets/learning-path.js?v=41"></script>
+<link rel="stylesheet" href="assets/course-language.css?v=32">
+<script defer src="assets/course-english-data.js?v=56"></script>
+<script defer src="assets/course-language.js?v=39"></script>
+<link rel="stylesheet" href="assets/chapter-visuals.css?v=35">
+<script defer src="assets/chapter-visuals.js?v=47"></script>
+<link rel="stylesheet" href="assets/visual-refinement.css?v=42">
+<link rel="stylesheet" href="assets/visual-polish.css?v=43">
+<script defer src="assets/export-locale.js?v=44"></script>
+<script defer src="assets/learning-simplicity.js?v=44"></script>
+<link rel="stylesheet" href="assets/learning-simplicity.css?v=44">
+<link rel="stylesheet" href="assets/real-figures.css?v=47">
+<script defer src="assets/real-figures.js?v=47"></script>
+<link rel="stylesheet" href="assets/course-lab.css?v=53">
+</head>
+<body>
+<a href="#main" class="skip">跳至主要内容</a>
+<aside class="sidebar" id="sidebar">
+  <a class="brand" href="#overview"><img class="course-brand-mark" src="assets/course-logo-mark.svg" width="37" height="37" alt=""><span>可视化导论<small>Visualization</small></span></a>
+  <p class="nav-label">学习空间</p>
+  <nav aria-label="主导航">
+    <div class="nav-group" role="group" aria-labelledby="nav-study"><p class="nav-group-label" id="nav-study">课程学习</p>
+      <a href="#overview" data-page="overview"><span aria-hidden="true">◫</span>学习概览</a>
+      <a href="#start" data-page="start"><span aria-hidden="true">◎</span>基础导学</a>
+      <a href="#courses" data-page="courses"><span aria-hidden="true">▤</span>课程目录<span class="nav-count">5</span></a>
+      <a href="#case?step=0" data-page="case"><span aria-hidden="true">▥</span>完整案例</a>
+      <a href="#showcase" data-page="showcase"><span aria-hidden="true">▥</span>学习成果示例</a>
+    </div>
+    <div class="nav-group" role="group" aria-labelledby="nav-practice"><p class="nav-group-label" id="nav-practice">实践与检测</p>
+      <a href="#fixer" data-page="fixer"><span aria-hidden="true">◇</span>图表纠错实验室</a>
+      <a href="#lab" data-page="lab"><span aria-hidden="true">⌁</span>可视化实验室</a>
+      <a href="#design" data-page="design"><span aria-hidden="true">◇</span>设计与综合实践</a>
+      <a href="#review" data-page="review"><span aria-hidden="true">☑</span>知识自测与复习</a>
+    </div>
+    <div class="nav-group" role="group" aria-labelledby="nav-tools"><p class="nav-group-label" id="nav-tools">学习工具</p>
+      <a href="#glossary" data-page="glossary"><span aria-hidden="true">文</span>术语手册</a>
+      <a href="#notes" data-page="notes"><span aria-hidden="true">▧</span>学习笔记</a>
+    </div>
+  </nav>
+  <div class="side-progress"><div><span>阅读进度</span><strong id="side-percent">0%</strong></div><progress id="side-progress" value="0" max="100">0%</progress><small id="side-count">尚未完成小节</small></div>
+  <div class="side-bottom"><p>观察 · 思考 · 动手</p><a href="#about">关于课程与使用帮助 <span>↗</span></a></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><button class="menu-toggle" id="menu-toggle" aria-controls="sidebar" aria-label="展开导航" aria-expanded="false">☰</button><span class="breadcrumb">课程 / <strong id="page-label">学习概览</strong></span><form class="search" id="search-form" role="search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/></svg><input id="search" aria-label="全站搜索课程、术语与功能" placeholder="搜索课程、术语与功能…" type="search"><kbd>/</kbd></form></header>
+  <main id="main" tabindex="-1"></main>
+  <footer class="footer"><span>可视化导论 · 支持数据理解与分析</span><span>学习记录保存在当前浏览器 <a href="#notes">备份记录</a></span></footer>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>
