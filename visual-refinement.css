@@ -1,0 +1,99 @@
+/* v36: improve legibility and consistency without changing course content or data encodings. */
+/* 2. Shared card rows keep artwork, titles, outcomes and progress aligned. */
+.home-overview>.chapter-overview{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px;align-items:stretch}
+.home-overview>.chapter-overview>a,.home-overview>.chapter-overview>a:last-child{display:grid;grid-template-columns:minmax(0,1fr);grid-template-rows:subgrid;grid-row:span 6;row-gap:10px;padding:17px 15px 14px;min-width:0;border-radius:8px;box-shadow:none;align-content:start}
+.home-overview>.chapter-overview>a>*{grid-column:1!important;grid-row:auto!important;min-width:0}
+.home-overview>.chapter-overview .chapter-top{font-size:12px;line-height:1.5;margin:0;gap:8px;color:var(--ui-muted)}
+.home-overview>.chapter-overview .chapter-art,.home-overview>.chapter-overview>a:last-child .chapter-art{width:100%;height:auto;aspect-ratio:2.25;margin:0;max-height:none;align-self:start;border-radius:5px;background:#f5f8fb}
+.home-overview>.chapter-overview h3,.home-overview>.chapter-overview>a:last-child h3{font-size:16px;line-height:1.55;font-weight:700;min-height:0;margin:0;color:var(--ui-ink);overflow-wrap:anywhere}
+.home-overview>.chapter-overview .chapter-outcome{font-size:13px!important;line-height:1.8;padding:0;margin:0!important;color:var(--ui-muted)!important;overflow-wrap:anywhere}
+.home-overview>.chapter-overview small,.home-overview>.chapter-overview>a:last-child small{font-size:12px;line-height:1.65;align-self:end;margin:0;padding-top:10px;border-color:#e5eaf0;color:var(--ui-muted);gap:7px}
+/* 3. Quiet reading surfaces. The homepage retains its coordinate-paper identity. */
+body.lesson-reading-layout{background:#f6f8fa;background-image:none}
+.lesson-reading-layout .lesson-header{background-image:none;background-color:#f1f5f8}
+.lesson-reading-layout .lesson-main,.lesson-reading-layout .chapter-content{background-image:none}
+.lesson-reading-layout .chapter,.lesson-reading-layout .chapter-nav{border-color:#e5eaf0;box-shadow:none;border-radius:8px}
+.lesson-reading-layout .chapter h2{border-left-color:#b9cddd}
+.lesson-reading-layout .reading-outline{border-color:#e5eaf0}
+/* 4. Text hierarchy: comfortably readable body, labels and secondary text. */
+body{font-family:"Microsoft YaHei","PingFang SC","Segoe UI",sans-serif}
+.home-overview .section-head h2,.visual-gallery-heading h2{font-size:18px;line-height:1.5}
+.home-overview .section-head p{font-size:13px;line-height:1.8;color:var(--ui-muted)}
+.home-overview .section-head>a,.visual-gallery-grid figcaption p{font-size:12px;line-height:1.75;color:var(--ui-muted)}
+.visual-gallery-grid h3{font-size:16px;line-height:1.5}
+.home-overview>.home-heading .resume-help,.home-overview>.home-heading .resume-pending{font-size:13px!important;line-height:1.8;color:var(--ui-muted)}
+.home-branded .home-progress :is(span,p,a){font-size:12px;line-height:1.75}
+.study-evidence-summary small{font-size:12px;line-height:1.75;color:var(--ui-muted)}
+.catalog-top h2{font-size:25px;line-height:1.45}.catalog-top p,.catalog-top .goals{font-size:14px;line-height:1.9;color:var(--ui-muted)}.catalog-card .chapter-no{font-size:12px;line-height:1.7}
+.lesson-reading-layout .chapter h2{font-size:25px;line-height:1.55}
+.lesson-reading-layout .tab-panel[data-panel=explain]{font-size:16px;color:var(--ui-ink)}
+.lesson-reading-layout .tab-panel[data-panel=explain] :is(p,li){line-height:1.95;color:var(--ui-ink)}
+.lesson-reading-layout .chapter-subtitle{font-size:14px;line-height:1.85;color:var(--ui-muted)}
+.lesson-reading-layout .reading-outline button{font-size:12px;line-height:1.75}
+html[lang=en] .home-overview>.chapter-overview h3{font-size:16px;line-height:1.55;letter-spacing:0}
+html[lang=en] .home-overview>.chapter-overview .chapter-outcome{font-size:13px!important;line-height:1.8}
+/* 5. Compact links within each group, with more explicit group separation. */
+.sidebar{padding-top:26px;padding-bottom:16px}
+.sidebar nav{display:block;margin-top:22px}
+.sidebar .nav-group{display:grid;gap:2px}
+.sidebar .nav-group+.nav-group{margin-top:20px}
+.sidebar .nav-group-label{font-size:12px!important;line-height:1.6;letter-spacing:.05em;color:var(--ui-muted)!important;margin:0 0 6px!important;padding-left:10px}
+.sidebar nav a{min-height:36px;padding:7px 10px;gap:10px;line-height:1.6;font-size:13px;border-radius:6px}
+html[lang=en] .sidebar nav a{font-size:12px;line-height:1.55}
+.sidebar nav a>span:first-child{width:18px;flex:none;font-size:18px;line-height:1;text-align:center}
+.sidebar nav a.active{box-shadow:inset 3px 0 var(--ui-blue);background:var(--ui-blue-soft);color:var(--ui-blue-dark)}
+.sidebar .side-progress{margin:18px 8px 12px;padding:13px 11px;border-radius:8px}
+.sidebar .side-bottom{padding:8px;font-size:12px}.sidebar .side-bottom p{letter-spacing:.04em;margin:8px 0}.sidebar .side-bottom a{font-size:12px;margin:10px 0}
+.lesson-reading-layout .course-tree-group{padding:5px 0}
+.lesson-reading-layout .chapter-nav .course-tree-group a{font-size:13px;line-height:1.65;padding:7px 9px;border-radius:5px}
+.lesson-reading-layout .course-tree-group>summary{padding:6px 8px;font-size:13px;line-height:1.6}
+.lesson-reading-layout .nav-evidence .study-badge{font-size:10px;line-height:1.5;padding:1px 4px}
+/* 6. One restrained set of controls and surfaces. Keep teaching marks unchanged. */
+.button,.filter-bar button,.learning-tools button,.compare-toggle,.tab-btn{min-height:36px;padding:7px 12px;border-radius:6px;line-height:1.6;box-shadow:none}
+.home-actions .button{min-height:40px;padding:8px 16px;font-size:13px}
+.button.primary{box-shadow:none}
+.panel,.catalog-card,.home-practice-links>a,.visual-gallery-grid>a,.showcase-item{border-radius:8px;box-shadow:none}
+.home-overview>.chapter-overview>a:hover,.catalog-card:hover,.home-practice-links>a:hover{box-shadow:none;transform:none;border-color:var(--ui-blue);background:#fbfcfe}
+:is(.button,.tab-btn,.filter-bar button,.sidebar nav a){transition:background-color .15s,border-color .15s,color .15s}
+:is(a,button,summary,input,textarea,select):focus-visible{outline:2px solid var(--ui-blue);outline-offset:3px}
+@media(max-width:1359px){.home-overview>.chapter-overview{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:849px){.home-overview>.chapter-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.home-overview>.chapter-overview>a{padding:16px 13px}.lesson-reading-layout .chapter h2{font-size:23px}}
+@media(max-width:600px){.home-overview>.chapter-overview{grid-template-columns:1fr;gap:12px}.home-overview>.chapter-overview>a,.home-overview>.chapter-overview>a:last-child{grid-template-columns:minmax(0,1fr);grid-column:auto;grid-row:span 6;padding:17px;row-gap:10px}.home-overview>.chapter-overview .chapter-art{aspect-ratio:2.5;max-height:145px}.home-overview .section-head h2,.visual-gallery-heading h2{font-size:18px}.catalog-top h2{font-size:23px}.lesson-reading-layout .chapter h2{font-size:22px}.lesson-reading-layout .tab-panel[data-panel=explain]{font-size:15px}.home-overview .section-head{flex-wrap:wrap}.study-evidence-summary{gap:10px 16px}}
+@media(prefers-reduced-motion:reduce){:is(.button,.tab-btn,.filter-bar button,.sidebar nav a){transition:none}}
+@media print{.home-overview>.chapter-overview{grid-template-columns:repeat(3,minmax(0,1fr))}.chapter,.catalog-card,.home-overview>.chapter-overview>a{box-shadow:none}}
+.lesson-reading-layout .tab-panel{animation:none}
+
+/* v42: prioritize course access and the first teaching paragraph. */
+@media(min-width:1100px){
+ .home-branded .home-heading{padding-bottom:8px;gap:18px}
+ .home-branded .home-heading>.course-tech-art{width:230px}
+ .home-branded .course-tech-art img{height:154px}
+ .home-branded .course-signature{margin-bottom:10px}
+ .home-branded .course-signature>img{width:64px;height:64px}
+ .home-branded .course-signature h1{font-size:34px!important}
+ .home-branded .course-brand-subtitle{font-size:15px;margin-top:3px!important}
+ .home-branded .course-visual-gallery{padding:6px 0 12px;margin-bottom:12px}
+ .home-branded .visual-gallery-heading{margin-bottom:8px}
+ .home-branded .visual-gallery-grid img{height:104px}
+ .home-branded .visual-gallery-grid figcaption{padding:9px 13px}
+ .home-branded .visual-gallery-grid h3{margin-bottom:2px;font-size:15px}
+ .home-branded .study-evidence-summary{padding-top:14px;padding-bottom:14px}
+ .home-branded .home-chapters-heading{margin-top:16px}
+}
+.lesson-reading-layout .lesson-header.with-chapter-visual{min-height:100px;padding:14px 270px 14px 28px}
+.lesson-reading-layout .with-chapter-visual .chapter-header-visual{width:218px;height:84px;right:28px}
+.lesson-reading-layout .lesson-header h1{margin-top:0;margin-bottom:6px}
+.lesson-reading-layout .lesson-header .subtitle{margin:0;font-size:13px;line-height:1.7}
+.lesson-reading-layout .lesson-main{padding-top:20px}
+.application-evidence{margin:20px 0 0;border-top:1px solid #dce5eb;padding-top:16px;font-size:15px;line-height:1.8}
+.application-evidence>summary{cursor:pointer;font-weight:600;color:#355a7b}
+.evidence-body{padding:12px 0}.evidence-body fieldset{border:0;padding:0;margin:16px 0}.evidence-body legend{font-weight:600;margin-bottom:10px}
+.evidence-fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.evidence-fields label{display:grid;gap:5px;font-size:14px;min-width:0}.evidence-fields input{width:100%;box-sizing:border-box;min-height:40px;padding:8px;border:1px solid #b9ccda;border-radius:6px;font:inherit;background:white;color:#303b45}
+.evidence-body textarea{display:block;width:100%;box-sizing:border-box;min-height:104px;margin:8px 0 12px;padding:10px;border:1px solid #b9ccda;border-radius:6px;font:inherit;color:#303b45;background:white}
+.evidence-criteria label{display:flex;align-items:flex-start;gap:9px;margin:8px 0;font-size:14px}.evidence-criteria input{margin-top:6px;flex:none}
+.evidence-result,.evidence-save{font-size:14px;line-height:1.8}.evidence-result ul{padding-left:22px}.evidence-result .needs-work{color:#805d35}.evidence-result .verified{color:#32695e}
+.evidence-actions{display:flex;gap:10px;flex-wrap:wrap}.evidence-actions .button{font-size:14px;white-space:normal}.evidence-reference{margin-top:14px}.evidence-reference summary{cursor:pointer;color:#496b87;font-size:14px}
+@media(max-width:1000px){.lesson-reading-layout .lesson-header.with-chapter-visual{padding-right:230px}.lesson-reading-layout .with-chapter-visual .chapter-header-visual{width:180px;height:76px;right:22px}}
+@media(max-width:700px){.lesson-reading-layout .lesson-header.with-chapter-visual{display:grid;grid-template-columns:minmax(0,1fr) 100px;min-height:92px;padding:12px 18px;gap:12px}.lesson-reading-layout .with-chapter-visual .chapter-header-visual{position:static;transform:none;width:100px;height:64px}.lesson-reading-layout .lesson-header h1{font-size:22px}.lesson-reading-layout .lesson-header .subtitle{font-size:12px}.evidence-fields{grid-template-columns:1fr}.application-evidence{font-size:15px}}
+
+.evidence-fields select{min-height:40px;padding:8px;border:1px solid #b9ccda;border-radius:6px;font:inherit;background:white;color:#303b45}.check-next-action .button[hidden]{display:none!important}.evidence-next{margin-top:16px}.evidence-next .button{font-size:14px}

@@ -1,0 +1,39 @@
+{
+  "records": 1704,
+  "countries": 142,
+  "years": [
+    1952,
+    1957,
+    1962,
+    1967,
+    1972,
+    1977,
+    1982,
+    1987,
+    1992,
+    1997,
+    2002,
+    2007
+  ],
+  "population2007": 6251013179,
+  "groups": {
+    "Africa": 52,
+    "Americas": 25,
+    "Asia": 33,
+    "Europe": 30,
+    "Oceania": 2
+  },
+  "sourceSHA256": "f74275b4a2f4a7c8e3a09a752f9d6e43d1759d78d5cbfdebaaa3e1a6efc68f78",
+  "figures": 12,
+  "license": "Jennifer Bryan gapminder package: CC0 (DESCRIPTION); underlying origin: Gapminder.org",
+  "source": "https://raw.githubusercontent.com/jennybc/gapminder/main/data-raw/08_gap-every-five-years.tsv",
+  "documentation": "https://jennybc.github.io/gapminder/reference/gapminder.html",
+  "retrieved": "2026-10-20",
+  "methods": {
+    "chapter1": "2007 hierarchy by continent; country nodes alphabetical and equal-sized; outer bar lengths linearly proportional to population; right bars show the ten largest populations in this excerpt. Position is not geographical.",
+    "chapter2": "2007 population cross-tabulation: continent -> GDP bins [0,2000,8000,20000,inf) -> life bins [0,50,65,75,inf). Both edge layers conserve the excerpt population; not migration.",
+    "chapter3": "All 1704 lifeExp values; common domain [23,83], one panel per continent, countries sorted by 2007 lifeExp. Labels are sampled, cells are not.",
+    "chapter4": "2007 x=log10(gdpPercap), y=lifeExp; bubble area exactly proportional to pop; KDE in log-GDP/life coordinates, Gaussian bandwidths 0.22 log10 units and 4 years, no population weights; 72x52 grid, contours at .2,.4,.6,.8 of maximum; marginal histograms count countries.",
+    "chapter5": "All country trajectories, linear joins at 12 five-year observations; no interpolation of missing years; right panel ranks 2007 minus 1952 life expectancy."
+  }
+}

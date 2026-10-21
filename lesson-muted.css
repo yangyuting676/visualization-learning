@@ -1,0 +1,10 @@
+/* Portal/lesson continuity. Teaching plots retain their original visual encodings. */
+:root{--read-ink:#424242;--read-blue:#446a91}
+body{background:#f6f6f6;color:var(--read-ink)}
+.course-topbar{border-color:#d7e2ec!important}.course-topbar .brand,.course-topbar a{color:#43688e!important}.course-topbar .tabs a.active{color:#3a5a7b!important;background:#e8eef4!important}
+.course-topbar .tabs a.current{color:#3a5a7b!important;background:#e8eef4!important;box-shadow:inset 0 -2px #628bb5}
+.lesson-header{background:#f0f0f0;border-color:#d4e0eb;color:#424242}.lesson-header .subtitle,.lesson-header .header-tip{color:#6e6e6e}.chapter{border-color:#d7e2ec}.chapter-nav{border-color:#d7e2ec}.chapter-nav a.active{color:#3a5a7b;background:#e8eef4}.chapter h2{color:#424242}
+.learning-tools{border-color:#d7e2ec}.learning-tools a,.learning-notes a{color:#446a91}.learning-tools button,.learning-notes button{background:#f3f3f3;border-color:#c2d2e3;color:#446a91}.learning-tools button.done{background:#f0f0f0;color:#417e70;border-color:#c0dfd8}.learn-goals{background:#f1f1f1;border-color:#6f95bb;color:#416589}.learning-notes p{color:#6e6e6e}.learning-notes textarea{border-color:#c2d2e3}
+.guide-entry{background:#f0f0f0}.guide-kicker,.guide-section p,.guide-card p{color:#416589}
+.beginner-guide{background:#f6f6f6;border-color:#cfdce8}.beginner-guide>summary{background:#f0f0f0;color:#42678c}.guide-idea{color:#484848}.guide-body dt{color:#42678c}.guide-body dd{color:#43688e}.guide-terms a{border-color:#cbd9e7;color:#446a91}.guide-body button,.copy-learning-code{border-color:#c2d2e3;color:#446a91}.guide-actions .guide-demo{background:#446a91;border-color:#446a91;color:white}.guide-check{border-color:#d3deea}.guide-check label{border-color:#d3deea}.guide-check input{accent-color:#446a91}.guide-terms>span,.guide-save-status{color:#6e6e6e}.guided-task{background:#f0f0f0;border-color:#888888}.guided-task strong,.guided-task summary{color:#427f71}.section-learning-pager strong{color:#446a91}.chapter-nav a.active{border-left-color:#628bb5}.chapter-nav .nav-tip a{color:#446a91}
+a:focus-visible,button:focus-visible,textarea:focus-visible{outline-color:#6f95bb}

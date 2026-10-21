@@ -1,0 +1,11 @@
+.check-next-action{margin:18px 0;padding:16px 0;border-top:1px solid #dce5eb;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.check-next-action>p,.task-next-action>p{flex-basis:100%;margin:0 0 8px;line-height:1.65;color:#394d5c}
+.check-next-action .primary,.task-next-action .primary{background:#4a759f;color:#fff;border:1px solid #4a759f}
+.path-other-actions{flex-basis:100%;margin-top:8px}.path-other-actions summary,.resume-pending summary,.chapter-task-entry summary{cursor:pointer;color:#496b87;font-size:14px}
+.path-other-actions>a{display:inline-block;margin:12px 20px 0 0;font-size:14px}
+.review-check-return{margin:20px 0;border-color:#4a759f!important;color:#355a7b!important}
+.resume-pending>div{padding-top:10px;line-height:1.8}.resume-pending>div a{margin-left:12px}
+.task-next-action{border-top:1px solid #dce5eb;margin-top:20px;padding-top:18px}
+.check-next-action[hidden],.review-check-return[hidden],.task-next-action[hidden],.section-learning-pager[hidden]{display:none!important}
+@media(max-width:600px){.check-next-action{align-items:stretch}.check-next-action>.button{width:100%;white-space:normal;text-align:left;line-height:1.5}.review-check-return{max-width:100%;white-space:normal}}
+.check-next-action{font-size:16px}.check-next-action .button,.task-next-action .button{font-size:15px;min-height:40px;line-height:1.5;padding:9px 14px}.check-next-action .path-other-actions{font-size:14px}

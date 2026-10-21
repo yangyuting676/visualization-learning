@@ -1,0 +1,55 @@
+/* Shared UI palette. Teaching charts, color swatches and source images retain their data encodings. */
+:root{--ui-blue:#4a759f;--ui-blue-dark:#355d84;--ui-blue-soft:#eaf1f8;--ui-teal:#4f8f82;--ui-teal-dark:#376c60;--ui-teal-soft:#eaf4f0;--ui-amber:#b18452;--ui-amber-dark:#805a32;--ui-amber-soft:#faf2e7;--ui-ink:#333b43;--ui-muted:#606a73;--ui-line:#dce2e7;--ui-bg:#f6f8fa;--ui-paper:#fff;--blue:var(--ui-blue);--teal:var(--ui-teal);--ink:var(--ui-ink);--muted:var(--ui-muted);--line:var(--ui-line);--bg:var(--ui-bg);--soft:var(--ui-blue-soft);--read-blue:var(--ui-blue);--read-ink:var(--ui-ink);accent-color:var(--ui-blue)}
+body{background-color:var(--ui-bg);color:var(--ui-ink)}
+h1,h2,h3,h4{color:var(--ui-ink)}
+a{color:var(--ui-blue-dark)}
+button,input,select,textarea{accent-color:var(--ui-blue)}
+:is(a,button,input,textarea,select,summary):focus-visible{outline-color:var(--ui-blue)!important}
+::selection{background:#dce9f5;color:#263f58}
+.sidebar,.topbar,.course-topbar,.chapter,.chapter-nav,.lecture-toolbar,.lecture-toc,.lecture-body{background-color:var(--ui-paper)}
+.brand svg{color:var(--ui-blue);background:var(--ui-blue-soft)}
+.sidebar nav a.active{color:var(--ui-blue-dark);background:var(--ui-blue-soft);box-shadow:inset 3px 0 var(--ui-blue)}
+.sidebar nav a.active>span:first-child,.sidebar nav a:hover,.link{color:var(--ui-blue-dark)}
+.sidebar nav a:hover{background:var(--ui-blue-soft)}
+.button.primary,.guide-actions .guide-demo,.guide-check>button[type=submit]{background:var(--ui-blue);border-color:var(--ui-blue);color:white}
+.button.primary:hover,.guide-actions .guide-demo:hover,.guide-check>button[type=submit]:hover{background:var(--ui-blue-dark);border-color:var(--ui-blue-dark)}
+.home-progress,.side-progress,.study-tip{background:var(--ui-teal-soft);border-color:#d2e4dd}
+.home-progress :is(span,p,a),.side-progress strong{color:var(--ui-teal-dark)}
+progress{accent-color:var(--ui-teal)}progress::-webkit-progress-bar{background:#dceae4}progress::-webkit-progress-value{background:var(--ui-teal)}
+.feature-symbol{background:var(--ui-blue-soft);color:var(--ui-blue)}
+.feature-cell:nth-child(2n) .feature-symbol{background:var(--ui-teal-soft);color:var(--ui-teal-dark)}
+.feature-cell:nth-child(3n) .feature-symbol{background:var(--ui-amber-soft);color:var(--ui-amber-dark)}
+.home-heading h1,.page-intro h1,.chapter h2,.home-overview h2{color:var(--ui-ink)}
+.course-topbar{border-color:var(--ui-line)!important}
+.course-topbar :is(.brand,a){color:var(--ui-blue-dark)!important}
+.course-topbar .tabs a.current,.course-topbar .tabs a.active{color:var(--ui-blue-dark)!important;background:var(--ui-blue-soft)!important;box-shadow:inset 0 -2px var(--ui-blue)}
+.lesson-header{background:var(--ui-blue-soft);border-color:#d4e1ed;color:var(--ui-ink)}
+.lesson-header :is(.subtitle,.header-tip),.chapter-subtitle{color:var(--ui-muted)}
+.chapter-nav a.active{color:var(--ui-blue-dark);background:var(--ui-blue-soft);border-left-color:var(--ui-blue)}
+.tab-btn{color:var(--ui-muted)}.tab-btn.active{color:var(--ui-blue-dark);border-bottom-color:var(--ui-blue)}
+.learning-tools :is(a,button),.learning-notes button,.chapter-nav .nav-tip a,.section-learning-pager strong{color:var(--ui-blue-dark)}
+.learning-tools button.done,.learn-section-done:after{background:var(--ui-teal-soft);color:var(--ui-teal-dark);border-color:#bed6cb}
+.tab-panel :is(p,li),.tab-panel :is(h3,h4){color:var(--ui-ink)}
+.tab-panel .theory-box,.theory-box{background:var(--ui-blue-soft);border-color:var(--ui-blue)}
+.beginner-guide{background:#f7fafb;border-color:#d5e2eb}.beginner-guide>summary{background:var(--ui-blue-soft);color:var(--ui-blue-dark)}
+.guide-body :is(dt,h3),.guide-idea{color:var(--ui-ink)}.guide-body dd{color:var(--ui-muted)}
+.guided-task,.guide-feedback.is-correct,.feedback.correct{background:var(--ui-teal-soft);border-color:var(--ui-teal);color:var(--ui-teal-dark)}
+.guided-task :is(strong,summary){color:var(--ui-teal-dark)}
+.guide-feedback:not(.is-correct),.feedback.wrong,.local-access-notice,.source-clarification{background:var(--ui-amber-soft);border-color:#dec6a9;color:var(--ui-amber-dark)}
+.source-clarification strong{color:var(--ui-amber-dark)}
+.section-keypoint{background:var(--ui-blue-soft);border-color:var(--ui-blue)}
+.lecture-body blockquote{background:var(--ui-teal-soft);border-left-color:var(--ui-teal);color:var(--ui-teal-dark)}
+.lecture-note,.lecture-toc{background:var(--ui-blue-soft)}
+/* Syntax highlighting uses the same families; source code text is unchanged. */
+pre,.tab-panel pre{background:#f0f4f7!important;color:var(--ui-ink)!important;border-color:var(--ui-line)}
+pre code,.tab-panel pre code{background:transparent!important;color:var(--ui-ink)!important}
+pre :is(.kw,.fn,.cls){color:var(--ui-blue-dark)!important}pre .str{color:var(--ui-teal-dark)!important}pre :is(.num,.op,.star){color:var(--ui-amber-dark)!important}pre .cmt{color:var(--ui-muted)!important}
+@media print{body{background:white}pre,.tab-panel pre{background:#f5f5f5!important}}
+.back,.demo-nav a,.tag{color:var(--ui-blue-dark);background:var(--ui-blue-soft)}
+.back:hover,.demo-nav a:hover{background:#dce9f5;color:var(--ui-blue-dark)}
+.demo-card{color:var(--ui-blue-dark);border-color:var(--ui-line)}.demo-card:hover{background:var(--ui-blue-soft);border-color:#b3c8da}
+.demo-btn{background:var(--ui-blue-soft);color:var(--ui-blue-dark);border-color:#c4d6e6}.demo-btn.active{background:var(--ui-blue);color:white}
+.tab-panel pre code{display:block;border:0!important;padding:0!important;box-shadow:none!important;line-height:1.9}
+.tab-panel pre code :is(.kw,.fn,.cls){color:var(--ui-blue-dark)!important}.tab-panel pre code .str{color:var(--ui-teal-dark)!important}.tab-panel pre code :is(.num,.op,.star){color:var(--ui-amber-dark)!important}.tab-panel pre code .cmt{color:var(--ui-muted)!important}
+.key-point{background:var(--ui-blue-soft);border-left-color:var(--ui-blue);color:var(--ui-ink)}.key-point strong{color:var(--ui-blue-dark)}.code-purpose{border-left-color:#c4d6e6;color:var(--ui-muted)}
+.lang-switch button.active{background:var(--ui-blue-dark);color:#fff}.lang-switch button:hover{background:var(--ui-blue-soft);color:var(--ui-blue-dark)}
